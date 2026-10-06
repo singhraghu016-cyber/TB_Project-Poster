@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TB Project Poster – Doctors For You NGO</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="poster-header">
+    <p class="university">IILM University, Greater Noida &nbsp;|&nbsp; MBA Healthcare Analytics &nbsp;|&nbsp; Summer Internship Project 2025</p>
+    <h2 class="org-name">Doctors For You NGO · Mandla District, MP</h2>
+    <h1 class="poster-title">A Data-Driven Approach to Predict TB Positivity &amp;<br>Strengthen Tribal Tuberculosis Programs</h1>
+    <div class="meta">
+      <span>Student: [Your Name], MBA-HA</span>
+      <span>Roll No: [Your Roll No]</span>
+      <span>University Mentor: [Mentor Name]</span>
+      <span>Organization Mentor: [NGO Supervisor Name]</span>
+      <span>Duration: 60 Days | 2025</span>
+    </div>
+  </header>
+
+  <!-- KPI Strip -->
+  <section class="kpi-strip">
+    <div class="kpi-card">
+      <span class="kpi-value">375</span>
+      <span class="kpi-label">TB Positive Cases</span>
+    </div>
+    <div class="kpi-card">
+      <span class="kpi-value">32,843</span>
+      <span class="kpi-label">Total Records Screened</span>
+    </div>
+    <div class="kpi-card">
+      <span class="kpi-value">74.1%</span>
+      <span class="kpi-label">Tribal Patients</span>
+    </div>
+    <div class="kpi-card">
+      <span class="kpi-value">3</span>
+      <span class="kpi-label">Survey Rounds</span>
+    </div>
+    <div class="kpi-card">
+      <span class="kpi-value">83.5%</span>
+      <span class="kpi-label">CT Screening Done</span>
+    </div>
+    <div class="kpi-card">
+      <span class="kpi-value">1.14%</span>
+      <span class="kpi-label">Overall Positivity Rate</span>
+    </div>
+    <div class="kpi-card">
+      <span class="kpi-value">9</span>
+      <span class="kpi-label">Deaths Recorded</span>
+    </div>
+  </section>
+
+  <!-- Row 1 -->
+  <main class="poster-grid">
+
+    <!-- Section: Background -->
+    <section class="card">
+      <h3>Background &amp; Objective</h3>
+      <p>Tuberculosis (TB) remains a critical public health challenge in tribal regions of Madhya Pradesh. Doctors For You NGO conducts active case-finding surveys across tribal communities in Mandla District through multiple rounds of door-to-door screening.</p>
+      <p>This project analyzes 375 confirmed TB-positive patients from 3 survey rounds to identify risk patterns, predict positivity likelihood, and provide evidence-based recommendations to strengthen tribal TB programs.</p>
+    </section>
+
+    <!-- Section: Gap Identified -->
+    <section class="card">
+      <h3>Gap Identified</h3>
+      <div class="gap-item">
+        <span class="gap-icon">🔍</span>
+        <div>
+          <strong>Gap 1: No Predictive Tool</strong>
+          <p>No data-driven risk scoring system exists to prioritize high-risk individuals before symptom onset.</p>
+        </div>
+      </div>
+      <div class="gap-item">
+        <span class="gap-icon">🔍</span>
+        <div>
+          <strong>Gap 2: Inconsistent Data Entry</strong>
+          <p>Missing Nikshay IDs, inconsistent Yes/No formats, and #N/A entries reduce data reliability for decision-making.</p>
+        </div>
+      </div>
+      <div class="gap-item">
+        <span class="gap-icon">🔍</span>
+        <div>
+          <strong>Gap 3: Low Symptom Documentation</strong>
+          <p>Only 54.9% cough, 7.2% fever reported among positives — classical TB symptoms are under-reported in tribal patients.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Data Overview -->
+    <section class="card">
+      <h3>Data Overview</h3>
+      <p class="dataset-tag">Dataset: 32,843 survey records | 3 Rounds | 43 Variables</p>
+      <ol class="steps-list">
+        <li><strong>Data Collection:</strong> Door-to-door surveys, Nikshay ID linkage, symptom screening</li>
+        <li><strong>Data Cleaning:</strong> Standardized Yes/No values, handled missing IDs, corrected formats</li>
+        <li><strong>Analysis:</strong> KPI identification, demographic profiling, symptom analysis</li>
+        <li><strong>Visualization:</strong> Dashboards, charts, trend analysis across rounds</li>
+        <li><strong>Predictive Framework:</strong> Risk scoring model development &amp; recommendations</li>
+      </ol>
+    </section>
+
+    <!-- Section: District Focus -->
+    <section class="card">
+      <h3>District Focus</h3>
+      <p>Mandla District, Madhya Pradesh — A predominantly tribal district with Gond &amp; Baiga tribal communities, facing challenges of healthcare access, forest terrain, and low TB awareness.</p>
+      <p><strong>Study Area:</strong> Mandla, Bichhiya, Nainpur, Narayanganj, Niwas, Ghughari, Mohgaon, Beejadandi, Mawai Blocks</p>
+    </section>
+
+    <!-- Section: Tribal vs Non-Tribal -->
+    <section class="card">
+      <h3>Tribal vs Non-Tribal: TB Positive Distribution</h3>
+      <div class="donut-chart-wrap">
+        <canvas id="tribalChart" width="160" height="160" aria-label="Tribal 74.1% vs Non-Tribal 25.9% donut chart"></canvas>
+        <div class="donut-legend">
+          <span class="legend-tribal">Tribal: 278 patients (74.1%)</span>
+          <span class="legend-nontribal">Non-Tribal: 97 patients (25.9%)</span>
+        </div>
+      </div>
+      <p class="warning">⚠ Tribal communities bear 3x higher TB burden than non-tribal population</p>
+      <div class="round-bars">
+        <p class="bar-label">Tribal Breakdown by Round:</p>
+        <div class="bar-row"><span>Round 1</span><div class="bar" style="--pct:72%"><span>108</span></div></div>
+        <div class="bar-row"><span>Round 2</span><div class="bar" style="--pct:100%"><span>150</span></div></div>
+        <div class="bar-row"><span>Round 3</span><div class="bar" style="--pct:13%"><span>20</span></div></div>
+      </div>
+    </section>
+
+    <!-- Section: Demographic Profile -->
+    <section class="card">
+      <h3>Demographic Profile of TB Positives</h3>
+      <div class="demo-grid">
+        <div class="demo-item">
+          <canvas id="genderChart" width="130" height="130" aria-label="Gender: Male 64.5%, Female 35.5%"></canvas>
+          <p><strong>Gender Distribution</strong></p>
+          <p>Male: 242 (64.5%)</p>
+          <p>Female: 133 (35.5%)</p>
+        </div>
+        <div class="demo-item">
+          <p><strong>Age Group Analysis</strong></p>
+          <div class="age-bars">
+            <div class="age-row"><span>&lt;18</span><div class="bar" style="--pct:9%"><span>12</span></div></div>
+            <div class="age-row"><span>18–30</span><div class="bar" style="--pct:34%"><span>45</span></div></div>
+            <div class="age-row"><span>31–45</span><div class="bar" style="--pct:83%"><span>109</span></div></div>
+            <div class="age-row"><span>46–60</span><div class="bar bar-peak" style="--pct:100%"><span>131</span></div></div>
+            <div class="age-row"><span>60+</span><div class="bar" style="--pct:59%"><span>77</span></div></div>
+          </div>
+          <p class="peak-label">Peak: 46–60 yrs (34.9%)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Symptom Profile -->
+    <section class="card">
+      <h3>Symptom Profile Among TB Positives</h3>
+      <div class="symptom-list">
+        <div class="symptom-row"><span class="sym-name">Cough &gt;2 Weeks</span><div class="sym-bar" style="--pct:54.9%"></div><span class="sym-pct">54.9%</span></div>
+        <div class="symptom-row"><span class="sym-name">Chest Pain</span><div class="sym-bar" style="--pct:42.4%"></div><span class="sym-pct">42.4%</span></div>
+        <div class="symptom-row"><span class="sym-name">Fever</span><div class="sym-bar" style="--pct:7.2%"></div><span class="sym-pct">7.2%</span></div>
+        <div class="symptom-row"><span class="sym-name">Weight Loss</span><div class="sym-bar" style="--pct:6.7%"></div><span class="sym-pct">6.7%</span></div>
+        <div class="symptom-row"><span class="sym-name">Loss of Appetite</span><div class="sym-bar" style="--pct:2.9%"></div><span class="sym-pct">2.9%</span></div>
+        <div class="symptom-row"><span class="sym-name">Night Sweats</span><div class="sym-bar" style="--pct:0.3%"></div><span class="sym-pct">0.3%</span></div>
+        <div class="symptom-row"><span class="sym-name">Blood in Sputum</span><div class="sym-bar" style="--pct:0.3%"></div><span class="sym-pct">0.3%</span></div>
+      </div>
+      <p class="warning">⚠ 45% of TB positives had NO cough — classic symptom-based screening misses nearly half the cases</p>
+    </section>
+
+    <!-- Section: Block-wise Distribution -->
+    <section class="card">
+      <h3>Block-wise TB Positive Distribution</h3>
+      <div class="block-bars">
+        <div class="block-row"><span>Mandla</span><div class="bar bar-top" style="--pct:100%"><span>105</span></div></div>
+        <div class="block-row"><span>Bichhiya</span><div class="bar" style="--pct:59%"><span>62</span></div></div>
+        <div class="block-row"><span>Nainpur</span><div class="bar" style="--pct:44%"><span>46</span></div></div>
+        <div class="block-row"><span>Mohgaon</span><div class="bar" style="--pct:28%"><span>29</span></div></div>
+        <div class="block-row"><span>Ghughari</span><div class="bar" style="--pct:25%"><span>26</span></div></div>
+        <div class="block-row"><span>Narayanganj</span><div class="bar" style="--pct:20%"><span>21</span></div></div>
+        <div class="block-row"><span>Beejadandi</span><div class="bar" style="--pct:14%"><span>15</span></div></div>
+        <div class="block-row"><span>Mawai</span><div class="bar" style="--pct:13%"><span>14</span></div></div>
+        <div class="block-row"><span>Niwas</span><div class="bar" style="--pct:11%"><span>12</span></div></div>
+      </div>
+    </section>
+
+    <!-- Section: Treatment Outcomes -->
+    <section class="card">
+      <h3>Treatment Outcomes (375 Positives)</h3>
+      <div class="outcome-grid">
+        <div class="outcome-item outcome-complete"><span class="out-val">155</span><span class="out-label">Treatment Complete</span></div>
+        <div class="outcome-item outcome-cured"><span class="out-val">127</span><span class="out-label">Cured</span></div>
+        <div class="outcome-item outcome-ongoing"><span class="out-val">19</span><span class="out-label">Ongoing</span></div>
+        <div class="outcome-item outcome-died"><span class="out-val">9</span><span class="out-label">Died</span></div>
+        <div class="outcome-item outcome-lost"><span class="out-val">2</span><span class="out-label">Lost to Follow-up</span></div>
+        <div class="outcome-item outcome-refused"><span class="out-val">2</span><span class="out-label">Patient Refused</span></div>
+      </div>
+      <p class="success-note">✅ Combined success rate (Cured + Complete): 74.7% &nbsp;|&nbsp; ⚠ 2.4% mortality</p>
+    </section>
+
+    <!-- Section: Key Risk Factors -->
+    <section class="card">
+      <h3>Key Risk Factors &amp; KPIs</h3>
+      <div class="risk-grid">
+        <div class="risk-item"><span class="risk-val">16.8%</span><span class="risk-label">Alcohol Use Among Positives</span></div>
+        <div class="risk-item"><span class="risk-val">9.6%</span><span class="risk-label">Smoking Among Positives</span></div>
+        <div class="risk-item"><span class="risk-val">83.5%</span><span class="risk-label">Contact Tracing (CT) Done</span></div>
+        <div class="risk-item"><span class="risk-val">2.4%</span><span class="risk-label">Mortality Rate in Positives</span></div>
+      </div>
+      <p><strong>Diagnostic Methods Used:</strong></p>
+      <div class="diag-list">
+        <div class="diag-row"><span>NAAT +ve</span><div class="bar" style="--pct:48%"><span>153</span></div></div>
+        <div class="diag-row"><span>Clin. Diagnosed</span><div class="bar" style="--pct:70%"><span>222+</span></div></div>
+        <div class="diag-row"><span>X-Ray Suggestive</span><div class="bar bar-top" style="--pct:100%"><span>3194</span></div></div>
+      </div>
+    </section>
+
+    <!-- Section: SWOT -->
+    <section class="card swot-card">
+      <h3>SWOT Analysis</h3>
+      <div class="swot-grid">
+        <div class="swot-item swot-s">
+          <p class="swot-title">▲ STRENGTHS</p>
+          <ul>
+            <li>Active door-to-door screening</li>
+            <li>Multi-round follow-up design</li>
+            <li>Nikshay ID linkage</li>
+            <li>High CT coverage (83.5%)</li>
+          </ul>
+        </div>
+        <div class="swot-item swot-w">
+          <p class="swot-title">▼ WEAKNESSES</p>
+          <ul>
+            <li>Inconsistent data entry</li>
+            <li>Missing Nikshay IDs</li>
+            <li>Low symptom documentation</li>
+            <li>No predictive model</li>
+          </ul>
+        </div>
+        <div class="swot-item swot-o">
+          <p class="swot-title">◆ OPPORTUNITIES</p>
+          <ul>
+            <li>Risk scoring system feasible</li>
+            <li>AI/ML model deployment</li>
+            <li>Dashboard for field workers</li>
+            <li>Tribal health integration</li>
+          </ul>
+        </div>
+        <div class="swot-item swot-t">
+          <p class="swot-title">● THREATS</p>
+          <ul>
+            <li>Data quality degradation</li>
+            <li>Lost-to-follow-up risk</li>
+            <li>Remote terrain barriers</li>
+            <li>Cultural screening hesitancy</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: My Contributions -->
+    <section class="card">
+      <h3>My Contributions at DFY</h3>
+      <ul class="contrib-list">
+        <li><strong>Data Cleaning:</strong> Standardized 32K+ records, fixed Yes/No inconsistencies, handled missing values</li>
+        <li><strong>Dashboard Creation:</strong> Built interactive Excel/Power BI dashboards for round-wise analysis</li>
+        <li><strong>KPI Development:</strong> Identified 15+ KPIs including positivity rate, CT coverage, treatment success</li>
+        <li><strong>Tribal Analysis:</strong> Profiled tribal vs. non-tribal TB burden across 9 blocks</li>
+        <li><strong>Predictive Framework:</strong> Proposed TB risk scoring model using demographic &amp; symptom variables</li>
+      </ul>
+    </section>
+
+    <!-- Section: Recommendations -->
+    <section class="card">
+      <h3>Recommendations</h3>
+      <div class="rec-item"><span class="rec-icon">💡</span><div><strong>Risk Scoring Model</strong><p>Build a simple 5-variable TB Risk Score: Age (46–60), Tribal status, Alcohol use, Cough, and X-Ray result to triage high-risk patients faster.</p></div></div>
+      <div class="rec-item"><span class="rec-icon">💡</span><div><strong>Standardize Data Entry</strong><p>Implement dropdown menus in survey forms to eliminate Yes/No inconsistencies and mandatory Nikshay ID fields.</p></div></div>
+      <div class="rec-item"><span class="rec-icon">💡</span><div><strong>Asymptomatic Screening</strong><p>Since 45% of positives had no cough, mandate X-ray for all tribal adults aged 30+ regardless of symptoms.</p></div></div>
+      <div class="rec-item"><span class="rec-icon">💡</span><div><strong>Block-level Targeting</strong><p>Focus intensified campaigns on Mandla (105) and Bichhiya (62) blocks showing highest TB burden.</p></div></div>
+      <div class="rec-item"><span class="rec-icon">💡</span><div><strong>Follow-up System</strong><p>Create SMS-based alert system for 19 ongoing patients to prevent lost-to-follow-up and reduce 2.4% mortality.</p></div></div>
+    </section>
+
+    <!-- Section: Learnings -->
+    <section class="card">
+      <h3>Learnings</h3>
+      <ul class="contrib-list">
+        <li>Hands-on experience in real-world health data cleaning and management</li>
+        <li>Understood tribal healthcare barriers and social determinants of TB</li>
+        <li>Applied data analytics to derive actionable public health insights</li>
+        <li>Proficiency in Excel, Power BI, and data visualization tools</li>
+        <li>Developed understanding of Nikshay portal and NTEP guidelines</li>
+        <li>Learned cross-functional collaboration with healthcare field workers</li>
+      </ul>
+    </section>
+
+    <!-- Section: Conclusion -->
+    <section class="card conclusion-card">
+      <h3>Conclusion</h3>
+      <p>Tribal communities in Mandla district bear a disproportionate TB burden (74.1%). Active case-finding across 3 rounds identified 375 confirmed positives with 74.7% treatment success. A data-driven TB risk scoring model can significantly improve early identification and treatment initiation, particularly for asymptomatic tribal patients aged 46–60 years who constitute the highest-risk demographic.</p>
+      <blockquote>"Data is not just numbers — for tribal TB patients, it is the difference between early treatment and preventable death."</blockquote>
+    </section>
+
+    <!-- Section: Tools & Technologies -->
+    <section class="card tools-card">
+      <h3>Tools &amp; Technologies</h3>
+      <div class="tools-list">
+        <span class="tool-tag">MS Excel</span>
+        <span class="tool-tag">Power BI</span>
+        <span class="tool-tag">Python (Pandas)</span>
+        <span class="tool-tag">Nikshay Portal</span>
+        <span class="tool-tag">Data Cleaning</span>
+        <span class="tool-tag">Dashboard Design</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="poster-footer">
+    <p>📍 Field Site: Mandla District, Madhya Pradesh &nbsp;|&nbsp; Organization: Doctors For You NGO &nbsp;|&nbsp; Program: NTEP (National TB Elimination Programme)</p>
+    <p>MBA Healthcare Analytics &nbsp;|&nbsp; Summer Internship 2025</p>
+    <p>Data Source: Primary field survey data (R1–R3) &nbsp;|&nbsp; n = 32,843 records &nbsp;|&nbsp; Positive Cases: 375</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
